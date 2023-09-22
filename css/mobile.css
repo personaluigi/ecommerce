@@ -94,6 +94,21 @@
 #open-cart {
     border: none;
     background: none;
+    position: relative;
+}
+
+#iconBuy {
+    cursor: pointer;
+    display: none;
+    width: 17px;
+    height: 17px;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -8px;
 }
 
 #basket {
@@ -185,6 +200,11 @@
 #slide,
 #slide>img {
     width: 100%;
+}
+
+#slide {
+    display: flex;
+    overflow: auto;
 }
 
 .section-two {
