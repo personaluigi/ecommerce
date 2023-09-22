@@ -1,15 +1,17 @@
 const btn = document.getElementById('btn-menu');
 const menu = document.getElementById('menu');
+let basket = document.getElementById('basket');
 
 function openMenu() {
     btn.classList.toggle('active-menu');
     menu.classList.toggle('show-menu');
+    basket.classList.remove('basket-active');
 }
-
-let basket = document.getElementById('basket');
 
 function openBasket() {
     basket.classList.toggle('basket-active');
+    btn.classList.remove('active-menu');
+    menu.classList.remove('show-menu');
 }
 
 const thumbOne = document.getElementById('thumb-one');
@@ -72,8 +74,36 @@ plus.addEventListener('click', () => {
     update();
 });
 
+const icon = document.getElementById('iconBuy');
+
 function addToCart() {
+    let pay = 125 * num;
+
     if (num > 0) {
+        let newBuy = `<span>Cart</span><div>
+        <div id="thumb-product">
+        <img src="images/image-product-1-thumbnail.jpg" alt="">
+      </div>
+      <div id="description">
+        <span>Fall Limited Edition Sneakers</span><br>
+        <span>$125.00 x ${num} = <strong>$${pay}.00</strong></span>
+      </div>
+      <button id="delete-buy" onclick="removeBuy()">
+        <img src="images/icon-delete.svg" alt="">
+      </button>
+    </div>
+    <button id="check-out">Check Out</button>`
+
+        basket.innerHTML = newBuy;
+        icon.textContent = `${num}`
+        icon.style.display = 'block';
         basket.classList.add('basket-active');
     }
+}
+
+function removeBuy() {
+    let remove = '<span>Cart</span><p>Your cart is empty.</p>'
+
+        basket.innerHTML = remove;
+        icon.style.display = 'none';
 }
