@@ -1,0 +1,233 @@
+@media screen and (min-width: 769px) {
+    #btn-menu {
+        display: none;
+    }
+
+    .header {
+        padding: 25px;
+        border-bottom: 1px solid rgb(196, 196, 196);
+    }
+
+    #menu {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    #menu a {
+        font-size: 1.1rem;
+        color: hsl(219, 9%, 45%);
+        text-decoration: none;
+        position: relative;
+    }
+
+    #menu a::before {
+        content: '';
+        width: 0;
+        height: 3px;
+        transition: .4s;
+        background-color: hsl(26, 100%, 55%);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -5px;
+    }
+
+    #menu a:hover::before {
+        width: 110%;
+    }
+
+    #menu a:hover {
+        color: black;
+    }
+
+    #basket {
+        width: 500px;
+        top: 110px;
+        left: 95%;
+        background-color:rgb(245, 245, 245);
+        transform: translate(-95%);
+    }
+
+    #basket>span {
+        text-align: center;
+        border-bottom: none;
+    }
+
+    #delete-buy {
+        cursor: pointer;
+    }
+
+    #check-out {
+        cursor: pointer;
+        width: 50%;
+        margin-right: 5rem;
+        transition: .2s;
+    }
+
+    #check-out:hover {
+        opacity: 60%;
+    }
+
+    #cart {
+        cursor: pointer;
+    }
+
+    #avatar {
+        width: 45px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        display: block;
+        width: 1200px;
+        margin: auto;
+    }
+
+    main {
+        margin: 3rem 0;
+    }
+
+    #box-slide {
+        width: 470px;
+        height: 470px;
+        margin: auto;
+    }
+    
+    #slide {
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    #slide>img {
+        border-radius: 20px;
+        width: 100%;
+    }
+    
+    .thumbnails {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .thumbnails>button {
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+    
+    .thumbnails>button>img  {
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
+        margin-top: 3px;
+    }
+    
+    #thumb-one:hover {
+        transform: scale(1.05);
+        transition: .3s ease-in-out;
+    }
+    
+    #thumb-two:hover {
+        transform: scale(1.05);
+        transition: .3s ease-in-out;
+    }
+    
+    #thumb-three:hover {
+        transform: scale(1.05);
+        transition: .3s ease-in-out;
+    }
+    
+    #thumb-four:hover {
+        transform: scale(1.05);
+        transition: .3s ease-in-out;
+    }
+    
+    #thumb-one.active-thumb {
+        opacity: 50%;
+    }
+    
+    #thumb-two.active-thumb {
+        opacity: 50%;
+    }
+    
+    #thumb-three.active-thumb {
+        opacity: 50%;
+    }
+    
+    #thumb-four.active-thumb {
+        opacity: 50%;
+    }
+
+    .section-one {
+        float: left;
+        width: 50%;
+    }
+
+    .section-two {
+        margin-top: 3rem;
+        float: right;
+        width: 50%;
+    }
+    
+    .section-two>h1 {
+        padding: 1.2rem 0;
+        font-size: 3rem;
+        line-height: 55px;
+    }
+    
+    .section-two>p {
+        padding-right: 3rem;
+        font-size: 1.1rem;
+        color: hsl(219, 9%, 45%);
+    }
+
+    .values {
+        margin: 2rem 0;
+        padding: 0rem 0rem;
+        justify-content: left;
+        gap: 2rem;
+    }
+    
+    .values>div {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+    
+    #price {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: hsl(220, 13%, 13%);
+    }
+    
+    #price-cut {
+        font-size: 2.2rem;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .box>div {
+        width: 30%;
+    }
+    
+    .box>div>button {
+        cursor: pointer;
+    }
+    
+    #add-cart {
+        width: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    #add-cart:hover {
+        opacity: 60%;
+    }
+}

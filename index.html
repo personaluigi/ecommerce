@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/desktop.css">
+  <script src="js/script.js" defer></script>
+  <title>E-commerce product page</title>
+</head>
+
+<body>
+  <header class="header">
+    <div>
+      <button id="btn-menu" onclick="openMenu()">
+        <span id="hamburguer"></span>
+      </button>
+      <img src="images/logo.svg" alt="">
+    </div>
+    <nav id="nav">
+      <ul id="menu">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <button id="open-cart" onclick="openBasket()">
+        <img id="cart" src="images/icon-cart.svg" alt="">
+      </button>
+      <div id="basket">
+        <span>Cart</span>
+        <p>Your cart is empty.</p>
+        <!--<div>
+          <div id="thumb-product">
+            <img src="images/image-product-1-thumbnail.jpg" alt="">
+          </div>
+          <div id="description">
+            <span>Fall Limited Edition Sneakers</span><br>
+            <span>$125.00 x ${num} = <strong>${pay}</strong></span>
+          </div>
+          <button id="delete-buy">
+            <img src="images/icon-delete.svg" alt="">
+          </button>
+        </div>
+        <button id="check-out">Check Out</button>-->
+      </div>
+      <img id="avatar" src="images/image-avatar.png" alt="">
+    </div>
+  </header>
+
+  <main>
+    <section class="section-one">
+      <div id="box-slide">
+        <div id="slide">
+            <img id="img-slide" src="images/image-product-1.jpg" alt="">
+        </div>
+    </div>
+    <div class="thumbnails">
+        <button id="thumb-one" onclick="showOne()">
+            <img src="images/image-product-1-thumbnail.jpg" alt="">
+        </button>
+        <button id="thumb-two" onclick="showTwo()">
+            <img src="images/image-product-2-thumbnail.jpg" alt="">
+        </button>
+        <button id="thumb-three" onclick="showThree()">
+            <img src="images/image-product-3-thumbnail.jpg" alt="">
+        </button>
+        <button id="thumb-four" onclick="showFour()">
+            <img src="images/image-product-4-thumbnail.jpg" alt="">
+        </button>
+    </div>
+    </section>
+
+    <section class="section-two">
+      <span>Sneaker Company</span>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="values">
+        <div>
+          <span id="price">$125.00</span>
+          <span id="descont">50%</span>
+        </div>
+        <div>
+          <span id="price-cut">
+            <del>$250.00</del>
+          </span>
+        </div>
+      </div>
+      <div class="box">
+        <div>
+          <button id="minus">
+            <img src="images/icon-minus.svg" alt="">
+          </button>
+          <span id="number">0</span>
+          <button id="plus">
+            <img src="images/icon-plus.svg" alt="">
+          </button>
+        </div>
+        <button id="add-cart" onclick="addToCart()">Add to cart</button>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
