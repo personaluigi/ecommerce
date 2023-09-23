@@ -107,10 +107,6 @@
         width: 100%;
         border-radius: 20px;
     }
-
-    .img-mobile {
-        display: none;
-    }
     
     #slide>img {
         border-radius: 20px;
