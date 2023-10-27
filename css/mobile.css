@@ -126,6 +126,7 @@
 
 #basket.basket-active {
     height: 239px;
+    box-shadow: 0 0 2rem rgb(0, 0, 0, .5);
 }
 
 #basket>span {
